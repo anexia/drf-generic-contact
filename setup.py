@@ -10,7 +10,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="drf-generic-contact",
-    version=os.getenv("PACKAGE_VERSION", "1.0.0").replace("refs/tags/", ""),
+    version=os.getenv("PACKAGE_VERSION", "1.0.1").replace("refs/tags/", ""),
     packages=find_packages(),
     include_package_data=True,
     license="MIT License",
@@ -20,7 +20,7 @@ setup(
     url="https://github.com/anexia/drf-generic-contact",
     author="Alexandra Bruckner",
     author_email="abruckner@anexia-it.com",
-    install_requires=[],
+    install_requires=["django-generic-contact>=1.0.0,<1.1"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Framework :: Django",
