@@ -4,17 +4,16 @@
 [![Run linter and tests](https://github.com/anexia/drf-generic-contact/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/anexia/drf-generic-contact/actions/workflows/test.yml)
 [![Codecov](https://img.shields.io/codecov/c/gh/anexia/drf-generic-contact)](https://codecov.io/gh/anexia/drf-generic-contact)
 
-An extension of the [django-generic-contact](https://github.com/anexia/django-generic-contact) that provides an POST endpoints to create new instances for
+An extension of the [django-generic-contact](https://github.com/anexia/django-generic-contact) that provides a POST endpoint to create new instances for
 the `Contact` model via HTTP.
 
 ### Installation
-1. Install [django-generic-contact](https://github.com/anexia/django-generic-contact) by following the installation instructions.
-
-2. Install drf-generic-contact using pip:
 
 ```shell
 pip install drf-generic-contact
 ```
+
+Make sure the main module [django-generic-contact](https://github.com/anexia/django-generic-contact) is part of the INSTALLED_APPS.
 
 ### Usage
 
