@@ -30,7 +30,7 @@ class TestApi(TestCase):
                 {
                     "email": "mr@tester.com",
                     "phone": "123456",
-                }
+                },
             ),
         }
 
@@ -42,7 +42,9 @@ class TestApi(TestCase):
         url = reverse("contact-list")
         response = self.client.get(url)
         self.assertEqual(
-            HTTP_405_METHOD_NOT_ALLOWED, response.status_code, response.content
+            HTTP_405_METHOD_NOT_ALLOWED,
+            response.status_code,
+            response.content,
         )
 
     def test_http_get_single_contact_method_not_found(self):
@@ -58,7 +60,7 @@ class TestApi(TestCase):
                 {
                     "email": "updated@tester.com",
                     "phone": "987654",
-                }
+                },
             ),
         }
 

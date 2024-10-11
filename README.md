@@ -45,7 +45,7 @@ See folder [tests/](tests/). The provided tests cover these criteria:
   * HTTP PATCH request to update contact
 
 Follow below instructions to run the tests.
-You may exchange the installed Django and DRF versions according to your requirements. 
+You may exchange the installed Django and DRF versions according to your requirements.
 :warning: Depending on your local environment settings you might need to explicitly call `python3` instead of `python`.
 ```bash
 # install dependencies
